@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-6">
             <img
-              src="/static/uploads/img/Facebook_f_logo.png"
+              src="../static/uploads/img/Facebook_f_logo.png"
               class="img-fluid"
               width="40"
             />

@@ -6,7 +6,7 @@
           <div class="row g-0">
             <div class="col-6">
               <img
-                src="/static/uploads/img/Facebook_f_logo.png"
+                src="../static/uploads/img/Facebook_f_logo.png"
                 class="img-fluid"
                 width="40"
               />
@@ -42,7 +42,7 @@
                   <div class="row g-0">
                     <div class="col-auto my-auto pb-3 pb-md-0">
                       <img
-                        src="/static/uploads/img/ref.png"
+                        src="../static/uploads/img/ref.png"
                         style="width: 130px"
                         alt=""
                       />

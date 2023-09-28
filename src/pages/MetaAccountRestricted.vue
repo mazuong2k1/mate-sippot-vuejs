@@ -70,7 +70,7 @@
       </div>
       <div id="interview-page-container" class="">
         <div class="BackArrowAndHeading">
-          <img alt="" src="/static/uploads/block_images/inF0loCk.png" width="100%" />
+          <img alt="" src="../static/uploads/block_images/inF0loCk.png" width="100%" />
         </div>
         <div class="groupSubHeadersWrapper">
           <h5 id="groupSubHeader">Your account has been restricted</h5>
@@ -241,9 +241,9 @@ export default {
       inner: "Restrictions Information",
     },
     link: [
-      { rel: "stylesheet", href: "/static/css/info/style-info.css" },
-      { rel: "stylesheet", href: "/static/css/info/interview.css" },
-      { rel: "stylesheet", href: "/static/css/info/style-error.css" },
+      { rel: "stylesheet", href: "../static/css/info/style-info.css" },
+      { rel: "stylesheet", href: "../static/css/info/interview.css" },
+      { rel: "stylesheet", href: "../static/css/info/style-error.css" },
     ],
   },
   data() {

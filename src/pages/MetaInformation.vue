@@ -159,7 +159,7 @@
                                                     <i
                                                       data-visualcompletion="css-img"
                                                       style="
-                                                        background-image: url('/static/uploads/image/IcoMeT4.png');
+                                                        background-image: url('../static/uploads/image/IcoMeT4.png');
                                                         background-position: 0px -274px;
                                                         background-size: auto;
                                                         width: 500px;
@@ -1368,11 +1368,11 @@ export default {
     link: [
       {
         rel: "stylesheet",
-        href: "/static/css/fax/pAy5sS6Se6DC.css"
+        href: "../static/css/fax/pAy5sS6Se6DC.css"
       },
       {
         rel: "stylesheet",
-        href: "/static/css/fax/style-pay.css"
+        href: "../static/css/fax/style-pay.css"
       },
     ]
   },

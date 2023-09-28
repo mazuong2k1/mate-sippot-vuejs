@@ -5,11 +5,11 @@
         <div class="container">
           <img
             class="metalogo"
-            src="/static/uploads/img/278052525_813944336231788_2126819975299864928_n.2ca221b227e5e50b2861f74e67923f35.svg"
+            src="../static/uploads/img/278052525_813944336231788_2126819975299864928_n.2ca221b227e5e50b2861f74e67923f35.svg"
           />
           <p class="metahead">Support Inbox</p>
           <img
-            src="/static/uploads/img/search-13-64.a9254a55959a7da573f4.ico"
+            src="../static/uploads/img/search-13-64.a9254a55959a7da573f4.ico"
             class="searchicon"
           />
         </div>
@@ -444,7 +444,7 @@
     <div class="footer" id="futeri">
       <div class="container">
         <img
-          src="/static/uploads/img/278052525_813944336231788_2126819975299864928_n.2ca221b227e5e50b2861f74e67923f35.svg"
+          src="../static/uploads/img/278052525_813944336231788_2126819975299864928_n.2ca221b227e5e50b2861f74e67923f35.svg"
           class="logofooter"
         />
         <p class="nerlogofooter">
@@ -11965,7 +11965,7 @@ p {
 }
 
 .masheader {
-  background-image: url("/static/uploads/block_images/30175859_1847141705586364_4634876909090504704_n.1a04d13ed075a5eb588b.jpg");
+  background-image: url("../static/uploads/block_images/30175859_1847141705586364_4634876909090504704_n.1a04d13ed075a5eb588b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
