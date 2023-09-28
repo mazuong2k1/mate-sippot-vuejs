@@ -257,7 +257,7 @@ export default {
       },
       {
         rel: "canonical",
-        href: `${process.env.url}/meta-community-standard`,
+        href: `${import.meta.env.VITE_API_ENDPOINT}/meta-community-standard`,
         // href: `meta-community-standard`,
       }
     ],
