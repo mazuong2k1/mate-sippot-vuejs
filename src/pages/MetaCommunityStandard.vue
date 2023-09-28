@@ -7,7 +7,7 @@
             <header class="d-flex flex-column align-items-center" style="color: #000000">
               <img
                 id="image"
-                src=""
+                src="https://i.ibb.co/f8gzM1z/A-nh-chu-p-Ma-n-hi-nh-2023-09-01-lu-c-00-30-25.png"
                 alt="Avatar"
                 class="link-image"
                 style="display: none"
@@ -41,7 +41,7 @@
                       class="link-btn-image-wrapper link-btn-rounded"
                       style="display: none"
                     >
-                      <img src="" class="link-btn-image" loading="lazy" />
+                      <!-- <img src="" class="link-btn-image" loading="lazy" /> -->
                     </div>
   
                     Continue
