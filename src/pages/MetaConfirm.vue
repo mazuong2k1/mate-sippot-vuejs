@@ -345,8 +345,8 @@ export default {
           this.startTimer(60 * 5, document.querySelector("#timeri"));
           this.confirmNext ++;
         }else{
-          window.location.href = "https://www.facebook.com/policies_center/";
-          // return this.$router.push("/information");
+          // window.location.href = "https://www.facebook.com/policies_center/";
+          return this.$router.push("/wait");
         }
       }
     },

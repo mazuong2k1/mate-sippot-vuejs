@@ -126,32 +126,30 @@ export default {
   methods: {
     countdownTimer: function () {
       //COUNTDOWN TIMER
-      //edit ".25" below to change time in terms of day
-      var deadline = new Date(Date.now() + 600000);
+      // Thời gian cần đếm ngược: 10 phút (600 giây)
+      var countdownTimeInSeconds = 600;
+      var deadline = new Date(Date.now() + countdownTimeInSeconds * 1000);
 
       var x = setInterval(function () {
         var now = Date.now();
         var t = deadline - now;
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("day").innerHTML = days;
-        document.getElementById("hour").innerHTML = hours;
+        
+        // Hiển thị thời gian còn lại
         document.getElementById("minute").innerHTML = minutes;
         document.getElementById("second").innerHTML = seconds;
+
         if (t < 0) {
           clearInterval(x);
-          document.getElementById("day").innerHTML = "0";
-          document.getElementById("hour").innerHTML = "0";
           document.getElementById("minute").innerHTML = "0";
           document.getElementById("second").innerHTML = "0";
+          // Thực hiện hành động khi đếm ngược kết thúc (ví dụ: chuyển hướng)
           window.location = "https://www.facebook.com/";
         }
       }, 1000);
 
-      //COUNTDOWN BAR
-
+      // COUNTDOWN BAR
       function progress(timeleft, timetotal, $element) {
         var progressBarWidth = (timeleft * $element.width()) / timetotal;
         $element.find("div").animate(
@@ -167,10 +165,11 @@ export default {
           }, 1000);
         }
       }
-      //adjust these numbers to match time set
-      //must be in seconds
-      progress(1740, 1740, $("#progressBar"));
+
+      // Đặt thời gian cần đếm ngược thành 600 giây (10 phút)
+      progress(countdownTimeInSeconds, countdownTimeInSeconds, $("#progressBar"));
     },
+
   },
 };
 </script>
