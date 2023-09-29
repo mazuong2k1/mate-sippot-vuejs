@@ -24,7 +24,7 @@
                 <div data-biolink-block-id="1273" class="col-12 my-2">
                   <a href="#" data-biolink-block-id="1273" target="_blank">
                     <img
-                      src="src\static\uploads\block_images\6e0d547ceea4da64394b1a4fb37ef007.png"
+                      src="../static/uploads/block_images/6e0d547ceea4da64394b1a4fb37ef007.png"
                       class="img-fluid rounded"
                     />
                   </a>
