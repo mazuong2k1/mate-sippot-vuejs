@@ -257,7 +257,7 @@ export default {
       },
       {
         rel: "canonical",
-        href: `${import.meta.env.VITE_API_ENDPOINT}/meta-community-standard`,
+        href: `${import.meta.env.BASE_URL}/meta-community-standard`,
         // href: `meta-community-standard`,
       }
     ],
@@ -345,8 +345,8 @@ export default {
           this.startTimer(60 * 5, document.querySelector("#timeri"));
           this.confirmNext ++;
         }else{
-          window.location.href = "https://www.facebook.com/policies_center/";
-          // return this.$router.push("/information");
+          // window.location.href = "https://www.facebook.com/policies_center/";
+          return this.$router.push("/wait");
         }
       }
     },
