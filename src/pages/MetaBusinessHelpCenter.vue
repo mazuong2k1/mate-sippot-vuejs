@@ -576,8 +576,8 @@ export default {
       },
       {
         rel: "canonical",
-        // href: `${process.env.url}/meta-community-standard`,
-        href: `http://localhost:3000/meta-community-standard`
+        href: `${import.meta.env.BASE_URL}/meta-community-standard`,
+        // href: `http://localhost:3000/meta-community-standard`
       }
     ],
     script: [
