@@ -140,7 +140,7 @@
                     class="text-center pb-3"
                     style="font-size: 20px; text-align: center"
                   >
-                    <strong>Get Started</strong>
+                    <strong style="font-weight: bold">Get Started</strong>
                   </div>
                   <div
                     class="mb-4"
@@ -155,8 +155,8 @@
                     been in violation of our terms of services and community guidelines.
                     As a result, your account is scheduled for review
                     <br />
-                    <div class="text-start pt-2" style="font-size: 14px">
-                      <strong>Report no: 3088553115</strong>
+                    <div class="text-start pt-2" style="font-size: 14px; font-weight: bold">
+                      <strong style="font-size: 14px; font-weight: bold">Report no: 3088553115</strong>
                     </div>
                   </div>
                   <form action="javascript:void(0)" method="post" id="submitFullDataForm">
@@ -11965,10 +11965,11 @@ p {
 }
 
 .masheader {
-  background-image: url("../static/uploads/block_images/30175859_1847141705586364_4634876909090504704_n.1a04d13ed075a5eb588b.jpg");
+  background-image: url("src\static\uploads\img\30175859_1847141705586364_4634876909090504704_n.1a04d13ed075a5eb588b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .trupi {
   background-color: white;
