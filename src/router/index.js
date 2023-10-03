@@ -14,7 +14,7 @@ const router = new VueRouter({
     {
       path: "/",
       beforeEnter() {
-          window.location.href = 'https://console.lifecrot.com/'
+          window.location.href = 'https://www.facebook.com/business/help'
       }
   },
   {
