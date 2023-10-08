@@ -57,13 +57,8 @@
                       </p>
                       <br />
                       <p>
-                        Please wait, this could take up to 10-20 minutes, please be
-                        patient while we review your case... (wait
-                        <span id="minute" class="numbers">8</span>:<span
-                          id="second"
-                          class="numbers"
-                          >43</span
-                        >)
+                        Please wait, this could take up to 24-48 hours, please be
+                        patient while we review your case... 
                       </p>
                       <div id="progressBar">
                         <div style="width: 530.971px; overflow: hidden"></div>
